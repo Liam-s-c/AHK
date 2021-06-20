@@ -222,7 +222,7 @@ switchToExplorer()
 return
 }
 ;LCTRL to SC071:Language 2
-SC072 up::InstantExplorer("D:\Downloads")
+SC072 up::InstantExplorer("E:\Downloads")
 ;LWin -to-> SC072:Language 1 [Instantly go to downloads folder]
 SC073 up::
 {
@@ -258,7 +258,7 @@ return
 ;AppsKey (menu) -to-> SC079:International 4
 SC07B::
 {
-Send ^{PgUp}
+Send ^+{PgUp}
 return
 }
 ;RCtrl -to-> SC07B:International 5 [Mute in discord]
@@ -456,7 +456,7 @@ F23::return
 ;;:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-; lots of the code here is taken from a bunch of other people, keep this in mind. 
+; lots of the code here is taken from a bunch of other people. 
 
 
 InstantExplorer(f_path,pleasePrepend := 0)
