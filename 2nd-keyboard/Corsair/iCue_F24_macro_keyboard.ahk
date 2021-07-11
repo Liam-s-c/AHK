@@ -26,7 +26,7 @@ SendMode Input
 #MenuMaskKey vk07 ;https://autohotkey.com/boards/viewtopic.php?f=76&t=57683
 #WinActivateForce ;https://autohotkey.com/docs/commands/_WinActivateForce.htm ;prevent taskbar flashing.
 ;;The lines above are optional. Delete them if you need to.
-
+detecthiddenwindows, on
 ;________________________________________________________________________________________=
 ;                                                                                        
 ;		  2ND KEYBOARD USING iCue (and the K55, though it'll work with any of them.)     
@@ -119,78 +119,30 @@ enter::return
 
 ;;------------------------NEXT ROW--------------------------;;
 
-z::
-{
-Send, '''
-return
-}
-x::
-{
-Send, def ():
-return
-}
-c::
-{
-Send, class ():
-return
-}
-v::
-{
-Send, def __init__(self):
-return
-}
-b::
-{
-Send, try:
-Send, {enter}
-Send, {tab}
-Send, import Tkinter as tk
-Send, {enter}
-Send, ^[
-Send, except ImportError:
-Send, {enter}
-Send, {tab}import tkinter as tk
-return
-}
+z::return
+x::return
+c::return
+v::return
+
+b::return
+
 n::
 {
 WinMinimize, A
 return
 }
-m::
-{
-Send, if i in :
-Send,{Left}
-Return
-}
-,::
-{
-Send, print('')
-Send, {left}
-Send, {left}
-return
-}
-.::
-{
-Send, import time, random, os, numpy, pandas, requests, Pendulum, Matplotlib
-Send, {enter} 
-Send, try:
-Send, {enter}
-Send, {tab}
-Send, import Tkinter as tk
-Send, {enter}
-Send, ^[
-Send, except ImportError:
-Send, {enter}
-Send, {tab}import tkinter as tk
-return
-}
+m::return
+,::return
+.::return
 /::
 {
 If WinActive("ahk_exe chrome.exe")
+	InputBox, foldername, Enter FolderName
+	Sleep, 500
 	Send, {CtrlDown}{ShiftDown}d
 	Sleep, 500
-	Send, {CtrlUp}{Shiftup}d
+	Send, %foldername%
+	SendInput, {Enter}
 If !WinActive("ahk_exe chrome.exe")
 	return
 return
@@ -346,7 +298,7 @@ right::
  Send, ^c
  Sleep 50
  Run, http://www.google.com/search?q=%clipboard%
- Return
+Return
 }
 ;[automatically google what every is in clipboard, if highlighted text then that.]
 
@@ -425,6 +377,7 @@ Send, {raw}int(input(''))
 Send, {Left}
 Send, {Left}
 Send, {Left}
+Sleep 3000
 return
 }
 F18::
