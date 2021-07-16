@@ -11,7 +11,7 @@ Menu, Tray, Icon, shell32.dll, 174 ;this line changes the taskbar icon to a keyb
 ;;  C:\Users\YOUR_USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 ;;  Or here for all users:
 ;;  C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
-;tes
+;te
 #NoEnv
 SendMode Input
 #InstallKeybdHook
