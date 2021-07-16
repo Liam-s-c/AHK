@@ -3,6 +3,7 @@
 DetectHiddenWindows, On
 WinGet, winInfo, List, ahk_exe Spotify.exe
 WinMaximize, ahk_exe Spotify.exe
+; hello
 Loop, %winInfo%
 {
 	thisID := winInfo%A_Index%
