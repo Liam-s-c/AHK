@@ -11,7 +11,6 @@ Menu, Tray, Icon, shell32.dll, 174 ;this line changes the taskbar icon to a keyb
 ;;  C:\Users\YOUR_USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 ;;  Or here for all users:
 ;;  C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
-;tedgs - - - -  test test test
 #NoEnv
 SendMode Input
 #InstallKeybdHook
@@ -243,7 +242,7 @@ SC07E::return
 ;Break::msgbox, Or is it THIS key? WHO KNOWS!
 ;CtrlBreak::msgbox, I have no idea what Ctrlbreak is. But it shows up sometimes.
 ;;Don't use the 3 keys above for your 2nd keyboard! Just don't!!
-
+wwsdsswwww
 insert::return
 delete::return
 
