@@ -1,3 +1,4 @@
+#NoEnv
 #SingleInstance force
 #WinActivateForce
 DetectHiddenWindows, On

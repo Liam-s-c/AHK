@@ -15,7 +15,7 @@ Menu, Tray, Icon, shell32.dll, 174 ;this line changes the taskbar icon to a keyb
 #NoEnv
 SendMode Input
 #InstallKeybdHook
-;#InstallMouseHook ;<--You'll want to use this if you have scripts that use the mouse.
+#InstallMouseHook ;<--You'll want to use this if you have scripts that use the mouse.
 #UseHook On
 #SingleInstance force ;only one instance of this script may run at a time!
 #MaxHotkeysPerInterval 2000
@@ -392,4 +392,4 @@ return
 
 F21::return
 F22::return
-F23::return
+F23::return 

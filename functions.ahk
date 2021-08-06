@@ -713,5 +713,6 @@ if not WinActive(theClass)
 	WinActivate %theClass%
 	;WinGetTitle, Title, A
 	WinRestore %theTitle%
-	}
+	} 
 }
+

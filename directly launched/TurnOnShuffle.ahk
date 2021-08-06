@@ -1,4 +1,5 @@
 #SingleInstance force
+#NoEnv
 #WinActivateForce
 DetectHiddenWindows, On
 WinGet, winInfo, List, ahk_exe Spotify.exe
