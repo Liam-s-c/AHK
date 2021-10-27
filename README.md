@@ -1,4 +1,3 @@
-# AutoHotKey - - - - - - 
-ALL of My scripts - (not just for the 2nd keyboard.)
+# AutoHotKey - - - - - - **[OLD OLD OLD]**
 
-; most of the code is highly edited and inspired from: https://github.com/TaranVH/2nd-keyboard
+# NEW VERSION [HERE](https://github.com/liamsc-net/ahk)
